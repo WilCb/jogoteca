@@ -7,7 +7,6 @@ class Jogo:
         self.categoria = categoria
         self.console = console
 
-
 jogo1 = Jogo('Tetris', 'Puzze', 'Atari')
 jogo2 = Jogo('God of war', 'Rack n Slash', 'PS2')
 jogo3 = Jogo('League of Legends', 'MOBA', 'PC')
@@ -17,7 +16,6 @@ lista = [jogo1, jogo2, jogo3]
 def index():
 
     return render_template('lista.html', titulo='Jogos', jogos=lista)
-
 
 @app.route("/novo")
 def novo():
